@@ -1,7 +1,14 @@
+/* General Reset */
+element { /* dit was er eerst */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
   body {
 
     font-family: Arial, sans-serif; /* pas de lettertype aan*/
-    background-color: #f5f5f5; /* pas de kleur aan*/
+    background-color: #ffffff; /* pas de kleur aan*/
     color: #2d3c5e;/* pas de kleur aan*/
    
   }
@@ -34,6 +41,143 @@
         justify-content: space-between;
     }  
   }
+
+  .logo h1 {
+    font-size: 1.5rem;
+    color: #2d3c5e;
+  }
+  
+  .logo span {
+    color: #4766a7;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #7b8496;
+    font-size: 1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #2d3c5e;
+  }
+  
+  .nav-links .button.get-started {
+    padding: 10px 20px;
+    background-color: #4766a7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav .get-started:hover {
+    background-color: #3b5794;
+  }
+  
+  /* Main Section */
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  
+  .content h1 {
+    font-size: 3rem;
+    color: #2d3c5e;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    color: #b8860b; /* Gold color */
+    margin-top: 10px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .buttons .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .buttons .button.try-free {
+    background-color: #4766a7;
+    color: #fff;
+  }
+  
+  .buttons .button.try-free:hover {
+    background-color: #3b5794;
+  }
+  
+  .buttons .button.read-docs {
+    background-color: #e0efff;
+    color: #4766a7;
+  }
+  
+  .buttons .button.read-docs:hover {
+    background-color: #d3e8fd;
+  }
+  
+  /* Hierdor maken de buttons een beweging bij het hoveren*/
+
+  .buttons .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* @font-face {
+    font-family: 'DIN Next LT Pro Webfont';
+    src: url("fonts/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic Webfont';
+    src: url("fonts/din-next-lt-arabic-regular.ttf") format("truetype");
+} */
+
+/* .viewer {
+  width: '800px';
+  length: '400px';
+} */ /* de viewer is responsive zolang hij geen vaste width en height krijgt.*/
+
+.viewer {
+  zoom: true;
+}
+
+.viewer {
+  shadowSpace: true;
+}
+
+.viewer {
+  loaderColor: '#000000, #ffffff'
+}
+
+.viewer {
+  loaderLogo: '/path/to/logo.png'
+}
+
+.button{
+  margin-top: 15rem;
+}
+
 /* Animaties BounceIn*/
 
 @keyframes bounceIn {

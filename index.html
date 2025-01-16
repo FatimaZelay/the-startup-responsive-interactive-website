@@ -1,24 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3D Visual</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-</body>
-</html>
-
-<nav>
-    <div class="logo-container">
-        <div class="logo">
-            <img src="assets/logo.png" alt="270 Degrees">
-        </div>
   <!-- Header Section -->
   <header class="header">
     <div class="logo">
@@ -29,16 +17,10 @@
       <a href="#pricing">Pricing</a>
       <a href="#demo">Demo</a>
       <!-- <button class="get-started">Get started</button> -->
+       
     </nav>
   </header>
 
-    <div class="menu-items">
-
-        <a href="">ABOUT</a>
-        <a href="">***</a>
-        <a href="">***</a>
-       
-    
   <!-- Main Section -->
   <main class="main">
     <div class="content">
@@ -49,14 +31,9 @@
         <button class="button read-docs">Read the docs</button>
       </div>
     </div>
-</nav>
-
-<h1>  3D VISUALS </h1>
-
-<p> Check this out </p> 
-     <!-- <section class="viewer">
-        <h1>  3D VISUALS </h1>
-        <p> Ring </p>
+     <section class="viewer">
+        <!-- <h1>  3D VISUALS </h1>
+        <p> Ring </p> -->
         <div class="js-270viewer" data-270-model="hva-ring"></div>
      </section>
     
@@ -67,9 +44,12 @@
         TSDViewer.create ($viewer, {
             model: 'hva-ring',
             plugins: 'customiser',
+            onLoadComplete: () => {
+              $viewer.setColor ({ name: 'logo', color: 'red'});
+            }
     
         })
-    </script>  -->
+    </script> 
   </main>
 </body>
 </html>

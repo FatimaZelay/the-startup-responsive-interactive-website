@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Visual</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -15,7 +19,18 @@
         <div class="logo">
             <img src="assets/logo.png" alt="270 Degrees">
         </div>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+        <img src="assets/logo.png" alt="Logo" width="80">
     </div>
+    <nav class="nav-links">
+      <a href="#about">About us</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#demo">Demo</a>
+      <!-- <button class="get-started">Get started</button> -->
+    </nav>
+  </header>
 
     <div class="menu-items">
 
@@ -24,9 +39,37 @@
         <a href="">***</a>
        
     
+  <!-- Main Section -->
+  <main class="main">
+    <div class="content">
+      <h1>3D VISUAL</h1>
+      <h2>Ring</h2>
+      <div class="buttons">
+        <button class="button try-free">Try for free</button>
+        <button class="button read-docs">Read the docs</button>
+      </div>
     </div>
 </nav>
 
 <h1>  3D VISUALS </h1>
 
 <p> Check this out </p> 
+     <!-- <section class="viewer">
+        <h1>  3D VISUALS </h1>
+        <p> Ring </p>
+        <div class="js-270viewer" data-270-model="hva-ring"></div>
+     </section>
+    
+    <script>window.TSDAPIKEY = '645c0808-b5fb-4d15-8986-ffb6a267af2d';</script>
+    <script src="https://api.270degrees.nl/api/script/latest/viewer.js"></script>
+    <script>
+        const $viewer = document.querySelector ('.viewer');
+        TSDViewer.create ($viewer, {
+            model: 'hva-ring',
+            plugins: 'customiser',
+    
+        })
+    </script>  -->
+  </main>
+</body>
+</html>

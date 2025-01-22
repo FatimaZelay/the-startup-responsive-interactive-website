@@ -90,6 +90,9 @@ element { /* dit was er eerst */
     padding: 50px;
   }
   
+    .viewer {
+      margin-left: auto;
+      aspect-ratio: auto 638 / 638; /* dit is de canvas attribute, hierdoor wordt de viewer op de juiste positie gezet*/
   
   .content h1 {
     font-size: 3rem;
@@ -154,8 +157,8 @@ element { /* dit was er eerst */
 } */
 
 /* .viewer {
-  width: '800px';
-  length: '400px';
+  width: '80vh';
+  length: '40vh';
 } */ /* de viewer is responsive zolang hij geen vaste width en height krijgt.*/
 
 .viewer {

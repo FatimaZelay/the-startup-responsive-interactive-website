@@ -189,4 +189,4 @@ element { /* dit was er eerst */
   80% { transform: scale3d(0.97, 0.97, 0.97); }
   to { opacity: 1; transform: scale3d(1, 1, 1); }
 }
-.button { animation: bounceIn 2s infinite; }
+/* .button { animation: bounceIn 2s ; } */

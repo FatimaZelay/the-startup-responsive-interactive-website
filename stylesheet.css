@@ -1,0 +1,129 @@
+/* Schrijf hier de verschillende stijlen, die gedeeld gaan
+   worden door jullie projecten */
+
+
+   :root {
+
+    /*Primary Background colors*/
+
+    --primary-white-color: #ffff;
+    --primary-carolinablue-color: #52A4D6;
+    --primary-lapislazuli-color:#1D72A6;
+    --primary-maastrichtblue-color:#082036;
+    --primary-black-color:#0A0A0A;
+
+
+    /*Secondary Button colors*/
+
+    --secundary-lightlapis-color: #D2E3ED;
+    --secundary-mayablue-color: #72C1F2;
+    --secundary-darkcerulean-color: #1A4973;
+    --secundary-cyanblue-color: #3C8FC2;
+    --secundary-spacecadet-color: #12314D;
+
+
+
+     /* Accent colors */
+   
+
+
+      /* Text colors */
+    --primary-text-color: var(--primary-white-color);
+    --secondary-text-color: var(--secundary-spacecadet-color);
+
+}
+
+
+
+
+/* Typografie */
+
+/* TYPOGRAPHY */
+
+/* Font import */
+@font-face {
+    font-family: 'DIN2014-bold';
+    src: url("/Users/fatimazohra/Library/Fonts/DIN2014-Bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'DIN2014-regular';
+    src: url("/Users/fatimazohra/Library/Fonts/DIN Next LT Pro Regular.ttf") format("truetype");
+}
+
+/* General styles */
+body {
+    --primary-font: 'DIN2014-regular', sans-serif;
+    --secondary-font: 'DIN2014-bold', sans-serif;
+
+    --font-weight-regular: 32px;
+    --font-weight-bold: 96px;
+
+    font-family: var(--primary-font);
+}
+
+
+/* Headings */
+
+/* Desktop */
+body {
+
+/* Desktop */
+--body-size-l-desktop: 32px;
+--body-size-m-desktop: 28px;
+--body-size-s-desktop: 24px;
+
+/* Tablet */
+--body-size-l-tablet: 28px;
+--body-size-m-tablet: 24px;
+--body-size-s-tablet: 20px;
+
+/* Mobile */
+--body-size-l-mobile: 24px;
+--body-size-m-mobile: 20px;
+--body-size-s-mobile: 16px;
+}
+
+
+/* TEXTS */
+
+body {
+ /* desktop */
+--h1-size-desktop: 96px;
+--h2-size-desktop: 72px;
+--h3-size-desktop: 64px;
+--h4-size-desktop: 48px;
+/* mobile */
+--h1-size-mobile: 64px;
+--h2-size-mobile: 48px;
+--h3-size-mobile: 32px;
+--h4-size-mobile: 32px;
+}
+
+
+/* Mobile */
+
+h1 {
+font-size: var(--h1-size-mobile)
+}
+
+h2 {
+font-size: var(--h2-size-mobile)
+}
+
+h3 {
+font-size: var(--h3-size-mobile)
+}
+
+h4 {
+font-size: var(--h4-size-mobile)
+}
+
+
+
+cursor: pointer;
+
+
+
+
+

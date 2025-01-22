@@ -13,12 +13,15 @@ element { /* dit was er eerst */
    
   }
 
-  body {
-
-    line-height: 1.6;
-    @media (min-width: 30em) {
-      display:grid;
-      grid-template-columns: 1fr ;
+    display:grid;
+    grid-template-columns: 1fr ;
+     
+    body {
+      line-height: 1.5;
+      @media (min-width: 30em) {
+        display:grid;
+        grid-template-columns: 1fr ;
+      }
     }
   }
   

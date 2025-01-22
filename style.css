@@ -1,18 +1,11 @@
-/* General Reset */
-element { /* dit was er eerst */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
   body {
-
-    font-family: Arial, sans-serif; /* pas de lettertype aan*/
-    background-color: #ffffff; /* pas de kleur aan*/
-    color: #2d3c5e;/* pas de kleur aan*/
-   
-  }
-
     display:grid;
     grid-template-columns: 1fr ;
      
@@ -24,40 +17,39 @@ element { /* dit was er eerst */
       }
     }
   }
-  
 
-  header {
-    /* position: sticky;
-    top: 0;
-    z-index: 1000; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ 
+ header {
+  
+    @media (min-width: 26em) {
+      display: flex;
+      justify-content: space-between;
+    }  
+      position:relative;
+      align-items: center;
+      padding: 20px 20px;
+      background-color:#fff;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
   
-  header {
-    display: flex;
-    @media (min-width: 26em) {
-        justify-content: space-between;
-    }  
-  }
 
   .logo h1 {
     font-size: 1.5rem;
     color: #2d3c5e;
+    .logo span {
+      color: #4766a7;
+    }
   }
   
-  .logo span {
-    color: #4766a7;
-  }
   
-  .nav-links {
+   .nav-links {
     display: flex;
     align-items: center;
     gap: 30px;
+    .nav-links a:hover {
+      color: #2d3c5e;
+    }
+    
   }
   
   .nav-links a {
@@ -66,11 +58,8 @@ element { /* dit was er eerst */
     font-size: 1rem;
   }
   
-  .nav-links a:hover {
-    color: #2d3c5e;
-  }
   
-  .nav-links .button.get-started {
+  /* .nav-links .button.get-started {
     padding: 10px 20px;
     background-color: #4766a7;
     color: #fff;
@@ -79,11 +68,11 @@ element { /* dit was er eerst */
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-  }
+  } */
   
   .nav .get-started:hover {
     background-color: #3b5794;
-  }
+  } 
   
   /* Main Section */
   .main {
@@ -92,54 +81,77 @@ element { /* dit was er eerst */
     align-items: center;
     padding: 50px;
   }
-  
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
     .viewer {
       margin-left: auto;
       aspect-ratio: auto 638 / 638; /* dit is de canvas attribute, hierdoor wordt de viewer op de juiste positie gezet*/
+    }
+  }
   
   .content h1 {
-    font-size: 3rem;
-    color: #2d3c5e;
+    font-size: 5rem;
+    color: #12314D;
   }
   
   .content h2 {
-    font-size: 2rem;
-    color: #b8860b; /* Gold color */
+    font-size: 3rem;
+    color: #c4a65b; /* Gold color */
     margin-top: 10px;
   }
   
-  .buttons {
-    margin-top: 20px;
+  .buttons { 
+    margin-top: 10px;
     display: flex;
     gap: 20px;
+    cursor: pointer;
+    .button { 
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+   
+    }
   }
   
+ 
   .buttons .button {
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 20px 40px;
+    font-size: 1.5rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
+  } 
+
+
+  
   
   .buttons .button.try-free {
-    background-color: #4766a7;
+    background-color:  #3C8FC2;
     color: #fff;
   }
   
   .buttons .button.try-free:hover {
-    background-color: #3b5794;
+    background-color: #12314D;
+    
   }
   
   .buttons .button.read-docs {
-    background-color: #e0efff;
-    color: #4766a7;
+    background-color: #D2E3ED;
+    color: #3C8FC2;
   }
   
   .buttons .button.read-docs:hover {
-    background-color: #d3e8fd;
+    background-color: #fff;
   }
   
   /* Hierdor maken de buttons een beweging bij het hoveren*/
@@ -147,42 +159,19 @@ element { /* dit was er eerst */
   .buttons .button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 2s;
   }
-  
-  /* @font-face {
-    font-family: 'DIN Next LT Pro Webfont';
-    src: url("fonts/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
-}
+  .button{
+    margin-top: 5rem;
+  }
 
-@font-face {
-    font-family: 'DIN Next LT Arabic Webfont';
-    src: url("fonts/din-next-lt-arabic-regular.ttf") format("truetype");
-} */
-
-/* .viewer {
-  width: '80vh';
-  length: '40vh';
-} */ /* de viewer is responsive zolang hij geen vaste width en height krijgt.*/
 
 .viewer {
   zoom: true;
+  height: 40vh;
 }
 
-.viewer {
-  shadowSpace: true;
-}
 
-.viewer {
-  loaderColor: '#000000, #ffffff'
-}
-
-.viewer {
-  loaderLogo: '/path/to/logo.png'
-}
-
-.button{
-  margin-top: 15rem;
-}
 
 /* Animaties BounceIn*/
 

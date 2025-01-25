@@ -69,19 +69,19 @@ body {
 body {
 
 /* Desktop */
---body-size-l-desktop: 32px;
---body-size-m-desktop: 28px;
---body-size-s-desktop: 24px;
+--body-size-l-desktop: 2em;
+--body-size-m-desktop: 1.75em;
+--body-size-s-desktop: 1.5em;
 
 /* Tablet */
---body-size-l-tablet: 28px;
---body-size-m-tablet: 24px;
---body-size-s-tablet: 20px;
+--body-size-l-tablet: 1.75em;
+--body-size-m-tablet: 1.5em;
+--body-size-s-tablet: 1.25em;
 
 /* Mobile */
---body-size-l-mobile: 24px;
---body-size-m-mobile: 20px;
---body-size-s-mobile: 16px;
+--body-size-l-mobile: 1.5em;
+--body-size-m-mobile: 1.25em;
+--body-size-s-mobile: 1em;
 }
 
 
@@ -89,15 +89,15 @@ body {
 
 body {
  /* desktop */
---h1-size-desktop: 96px;
---h2-size-desktop: 72px;
---h3-size-desktop: 64px;
---h4-size-desktop: 48px;
+--h1-size-desktop: 6em;
+--h2-size-desktop: 4.5em;
+--h3-size-desktop: 4em;
+--h4-size-desktop: 3em;
 /* mobile */
---h1-size-mobile: 64px;
---h2-size-mobile: 48px;
---h3-size-mobile: 32px;
---h4-size-mobile: 32px;
+--h1-size-mobile: 4em;
+--h2-size-mobile: 3em;
+--h3-size-mobile: 2em;
+--h4-size-mobile: 2em;
 }
 
 
@@ -121,7 +121,6 @@ font-size: var(--h4-size-mobile)
 
 
 
-cursor: pointer;
 
 
 

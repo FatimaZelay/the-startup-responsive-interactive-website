@@ -171,8 +171,18 @@
   height: 40vh;
 }
 
+/*toegankelijkheid*/
 
+a:focus, button:focus {
 	outline: 3px solid #c4a65b;
+	outline-offset: 2px;
+	border-radius: 4px;
+  }
+
+  .js-270viewer:focus {
+    outline: 2px solid #c4a65b; /* Accessible focus outline */
+    outline-offset: 2px;
+  }
 
 /* Animaties BounceIn*/
 

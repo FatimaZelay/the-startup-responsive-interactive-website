@@ -15,8 +15,6 @@ Hieronder zie je hoe mijn project eruit ziet, het is mooi en simpel en volgt te 
 
 <img width="745" alt="Screenshot 2025-01-22 at 20 10 39" src="https://github.com/user-attachments/assets/81b6c32e-76ed-43a3-84fd-1f70e7d6472e" />
 
-## Responsive
-
 ## Ontwerpkeuzes
 Hieronder kun je een filmpje bekijken van de website en de interacties.
 
